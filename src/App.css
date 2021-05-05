@@ -1,0 +1,110 @@
+body {
+  background-color: #e5e5e5;
+}
+
+.navbar {
+  box-shadow: inset 0px -1px 0px #d9d9d9;
+}
+
+#project-header {
+  height: 60px;
+  background: rgba(0, 0, 0, 0.02);
+  box-shadow: inset 0px -1px 0px #d9d9d9;
+}
+
+.project-form {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.container #project-header > div:first-child,
+.container .container-projects > .bd-highlight > div > div:first-child {
+  width: 100%;
+  max-width: 35%;
+}
+
+.container #project-header > div:nth-child(2),
+.container .container-projects > .bd-highlight > div > div:nth-child(2) {
+  width: 100%;
+  max-width: 25%;
+}
+
+.container #project-header > div:nth-child(3),
+.container .container-projects > .bd-highlight > div > div:nth-child(3) {
+  width: 100%;
+  max-width: 25%;
+}
+
+#form-container {
+  padding: 35px 25px 32px;
+}
+
+.avatar-image {
+  width: 24px;
+  height: 24px;
+  margin: 0 5px 0 0;
+}
+
+.date {
+  font-size: 10px;
+  line-height: 16px;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 991px) {
+  .search form {
+    display: flex;
+  }
+
+  .justify-content-end {
+    justify-content: center !important;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .search input {
+    width: calc(100% - 80px);
+    margin: 0 5px 0 0;
+  }
+
+  #project-header,
+  .container #project-header > div:nth-child(2),
+  .container .container-projects > .bd-highlight > div > div:nth-child(2),
+  .container #project-header > div:nth-child(4),
+  .container .container-projects > .bd-highlight > div > div:nth-child(4) {
+    display: none !important;
+  }
+
+  .container #project-header > div,
+  .container .container-projects > .bd-highlight > div > div {
+    align-self: initial !important;
+    max-width: 100% !important;
+  }
+
+  #project-list .flex-row {
+    flex-direction: column !important;
+    position: relative;
+  }
+
+  .container #project-header > div:last-child,
+  .container .container-projects > .bd-highlight > div > div:last-child {
+    position: absolute;
+    top: 17px;
+    right: 26px;
+    padding: 0 !important;
+    width: 4px;
+  }
+
+  .dropdown-menu.show {
+    left: initial !important;
+    right: 0;
+    transform: none !important;
+  }
+
+  #form-container {
+    padding: 32px 0;
+  }
+}
